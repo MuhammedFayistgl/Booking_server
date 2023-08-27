@@ -1,16 +1,16 @@
 import express from "express";
 
-import {
-  registerUser,
-  getUser,
-  getOneUser,
-  updateUser,
-  deleteUser,
-  signup,
-  otpSend,
-  userdetealsVerification,
-  crateNewOTP,
-} from "../controller/userController.js";
+// import {
+//   registerUser,
+//   getUser,
+//   getOneUser,
+//   updateUser,
+//   deleteUser,
+//   signup,
+//   otpSend,
+//   userdetealsVerification,
+//   crateNewOTP,
+// } from "../controller/userController.js";
 
 
 import { bockingHandler, getmyBooking ,getuser ,cancelOrder} from "../controller/Bockinguser.js";
@@ -18,7 +18,7 @@ import {  registergenrteOtpHandler ,otpverifyingHandler,loginHandler } from "../
 import { authentcationMiddlwer } from "../middlewere/authmiddlwer.js";
 import { uplodprofileimg } from "../controller/profile.js";
 import multer from "multer";
-import fs from 'fs'
+// import fs from 'fs'
 import { fileExistimg } from "../middlewere/imguplodMiddlwer.js";
 
 const router = express.Router();

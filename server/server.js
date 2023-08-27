@@ -12,7 +12,6 @@ const connution = async () => {
         useUnifiedTopology: true
       });
 
-
     console.log(`Mongodb connection established`);
   } catch (error) {
     console.log("connuction Erorr", error);
