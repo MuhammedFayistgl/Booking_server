@@ -11,23 +11,23 @@ import cookieParser from "cookie-parser";
 const app = express();
 
 app.use(cors())
-// app.use(function (req, res, next) {
+app.use(function (req, res, next) {
 
-//   var allowedDomains = [' http://localhost:5173/Booking_frontend/'
-//   , 'http://localhost:5174'];
-//   var origin = req.headers.origin;
-//   if (allowedDomains.indexOf(origin) > -1) {
-//     res.setHeader('Access-Control-Allow-Origin', origin);
-//   }
-
-  var allowedDomains = ['http://localhost:5173', 'http://localhost:5174'];
+  var allowedDomains = [' http://localhost:5173/Booking_frontend/'
+    , 'http://localhost:5174' , 'http://localhost:5173'];
   var origin = req.headers.origin;
   if (allowedDomains.indexOf(origin) > -1) {
     res.setHeader('Access-Control-Allow-Origin', origin);
   }
 
-//   next();
-// })
+  // var allowedDomains = ['http://localhost:5173', 'http://localhost:5174'];
+  // var origin = req.headers.origin;
+  // if (allowedDomains.indexOf(origin) > -1) {
+  //   res.setHeader('Access-Control-Allow-Origin', origin);
+  // }
+
+  next();
+})
 // app.use(express.json());
 app.use(cookieParser());
 app.use(bodyParser.json({ extended: false }));
