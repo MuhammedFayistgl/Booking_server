@@ -10,7 +10,7 @@ import {
   extraimageupload,
   userBookingGetadminHandler,
 
-  } from "../controller/adminadditems.js";
+  } from "../controller/Adminadditems.js";
 import { signupadmin } from "../controller/adminRegister.js";
 import { loginAdmin } from "../controller/adminLogin.js";
 
