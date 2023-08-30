@@ -15,7 +15,7 @@ const app = express();
 
 app.use(function (req, res, next) {
 
-  var allowedDomains = ['http://localhost:5173', 'http://localhost:5174','https://muhammedfayistgl.github.io/Booking_frontend/'];
+  var allowedDomains = ['http://localhost:5173', 'http://localhost:5174','https://booking-server-0uqh.onrender.com/'];
   var origin = req.headers.origin;
   if (allowedDomains.indexOf(origin) > -1) {
     res.setHeader('Access-Control-Allow-Origin', origin);
